@@ -1,0 +1,6 @@
+/ShellCodeFrame/.vs
+/ShellCodeFrame/*.sdf
+/ShellCodeFrame/ShellCodeFrame/x64/Release/*.obj
+/ShellCodeFrame/ShellCodeFrame/x64
+/ShellCodeFrame/ShellCodeLoaderTest/x64
+/ShellCodeFrame/x64

@@ -29,9 +29,13 @@ int main(int argc,char* argv[])
 	ReadFile(hFile, lpAddress, dwSize, &dwRead, 0);
 
 	//Ö´ÐÐShellCode
-	__asm
-	{
-		call lpAddress;
-	}
+	//__asm
+	//{
+	//	call lpAddress;
+	//}
+
+	void (*pf)() = (void (*)())lpAddress;
+	pf();
+
 	return 0;
 }

@@ -1,12 +1,14 @@
 #include "header.h"
 #include "api.h"
 
-__declspec(naked)void ShellCodeStart()
+void ShellCodeStart()
 {
-	__asm
-	{
-		jmp ShellCodeEntry;
-	}
+	//__asm
+	//{
+	//	jmp ShellCodeEntry;
+	//}
+
+	ShellCodeEntry();
 }
 
 
